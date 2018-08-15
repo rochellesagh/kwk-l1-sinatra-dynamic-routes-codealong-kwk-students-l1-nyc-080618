@@ -17,10 +17,11 @@ class App < Sinatra::Base
   
   #Create a new route for / goodbye/ :name that returns "Goodbye, (person's name)"
    get "/goodbye/:name" do
-   puts params
+  # puts params
    
     @user_name = params[:name]
     "Goodbye #{@user_name}!"
+    erb:goodbye
   end
   
 
